@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
 	ros::Publisher pub_end = nh.advertise<std_msgs::Float64>("/robot/joint5_position_controller/command", 100);
 
-	ros::Rate loop_rate(10);
+	ros::Rate loop_rate(30);
 
 	ros::Time startTime = ros::Time::now();
 
